@@ -1,0 +1,16 @@
+    
+V1.1 (05-21-2013)
+* Updated to Bootstrap 2.3.2
+* Updated to Font Awesome 3.1.1
+* Fixed contact email link
+
+
+V1.2 (06-1-2013)
+* IE9 Navbar CSS Fix
+
+
+V1.3 (06-6-2013)
+* IE8 Header & Client Section Opacity CSS Fix
+
+V1.4 (06-18-2013)
+* Removed Twitter API and replaced section with Message Cycle
