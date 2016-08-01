@@ -13,16 +13,7 @@ $member = in_array('member', $module_list);
 <html lang="en"><head>
     <meta charset="utf-8">
     <title>Agency11 | Designed By Theme Armada</title>
-    <meta name="keywords" content="made with bootstrap, wrap bootstrap themes, bootstrap agency theme, creative bootstrap sites, Agency11 theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
-    <meta name="description" content="Simple. Creative. - Agency11 is a responsive creative agency or portfolio theme designed with HTML5 and Twitter Bootstrap.">
-    <meta name="viewport" content="width=device-width">
-
-    <meta property="og:title" content="Agency11 | Designed By Theme Armada">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://themearmada.com/demos/agency11">
-    <meta property="og:site_name" content="Theme Armada">
-    <meta property="og:description" content="Simple. Creative. - Agency11 is a responsive creative agency or portfolio theme designed with HTML5 and Twitter Bootstrap.">
-
+   
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
@@ -36,15 +27,17 @@ $member = in_array('member', $module_list);
     <link rel="stylesheet" href="<?=$assetfolder?>css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=$assetfolder?>css/main.css">
     <link rel="stylesheet" href="<?=$assetfolder?>css/custom-styles.css">
-
+<!--
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
+-->
     <!-- Fav and touch icons -->
+   <!--
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?=$assetfolder?>/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?=$assetfolder?>/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?=$assetfolder?>/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<?=$assetfolder?>/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="<?=$assetfolder?>/favicon.png">
+    -->
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
