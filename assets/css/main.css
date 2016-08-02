@@ -64,6 +64,23 @@ p {
 }
 
 
+/**
+*cart*
+*/
+
+li.cart, a.show_minicart{
+	margin:0;
+	padding:.25em!important;
+}
+.cartMenu{
+	/*height:1.5em;*/
+	width:5.5em;
+}
+
+a.show_minicart::before, a.dropdown-toggle.show_minicart::after, b.caret{
+	display:none;
+}
+
 .section-title {
 	margin-bottom: 70px;
 }
@@ -177,6 +194,10 @@ iframe {
   position: static;
 }
 
+.space{
+	margin-bottom: 5em!important;
+}
+
 /* ==========================================================================
    Colors
    ========================================================================== */ 
@@ -223,6 +244,7 @@ iframe {
 .navbar-inner {
 	border: none;
 	height: 64px;
+
 }
 
 .navbar .brand {

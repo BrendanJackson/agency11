@@ -12,7 +12,7 @@ $member = in_array('member', $module_list);
 <!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="utf-8">
-    <title>Agency11 | Designed By Theme Armada</title>
+    <title><?=!empty($page_name) ? $page_name : \config::site_name ?></title>
    
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
@@ -54,6 +54,24 @@ $member = in_array('member', $module_list);
             <a class="brand" href="/"><img class="img-responsive col-lg-1" src="<?= $logo ?>" alt="lOGO" height="60" width="60"></a>
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
+
+                    <?php
+                    if(!empty($catalog)) {
+                        $minicart_data = \sa\application\modRequest::request('site.minicart', array('disable_minicart' => $disable_minicart, 'html' => ''), '');
+                        echo "<li class=' vertically-center cart btn btn-xs' >" . $minicart_data['html'] . "</li>";
+                    }?>
+                    <?php
+                    if(!empty($search)){
+                        echo
+                        "<li>
+                           <a href='/search'>Search</a>
+                        </li>";
+                    }?>
+                    <?php if(!empty($member)){
+                        echo "<li>
+                            <a href='/member/login'>Login</a>
+                            </li>";
+                    }?>
                     <?php
                     $navigation = \sa\application\modRequest::request('site.navigation', $data = array('level' => 2));
                     foreach ($navigation['navigation']['page_editor'] as $menuItem){
@@ -84,3 +102,5 @@ $member = in_array('member', $module_list);
         </div>
     </div>
 </div>
+
+<div class="space"></div>
