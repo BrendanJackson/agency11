@@ -33,9 +33,9 @@
         </div>
     </div>
 </footer>
-
+<!--
 <a href="#" class="scrollToTop"><i class="icon-chevron-up"></i></a>
-
+-->
 
 <!-- Javascript
 ================================================== -->
